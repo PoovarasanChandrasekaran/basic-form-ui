@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #6a5acd;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 50px 0px 0px 100px;
+      }
+      label,
+      p,
+      span {
+        color: #fefefe;
+        
+        font-size: 14px;
+        font-weight: 600;
+      }
+      p {
+        width: 150px;
+        text-transform: uppercase;
+      }
+      input[type=text],input[type=number],input[type=email], textarea {
+          width: 160px;
+          height: 25px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .ml-5 {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <p>First Name</p>
+        <input type="text" id="firstname" />
+        <span class="ml-5">(max 30 characters a-z and A-Z)</span>
+      </div>
+      <br />
+      <div class="row">
+        <p >Last Name </p>
+        <input type="text" id="lastname" />
+        <span class="ml-5">(max 30 characters a-z and A-Z)</span>
+      </div>
+      <br />
+
+      <div class="row">
+        <p for="dob">Date Of Birth</p>
+        <select name="date" id="date">
+          <option selected disabled>Day:</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+        </select>
+
+        <select name="month" id="month" class="ml-5">
+          <option selected disabled>Month:</option>
+          <option value="jan">Jan</option>
+          <option value="feb">Feb</option>
+          <option value="mar">Mar</option>
+          <option value="apr">Apr</option>
+          <option value="may">May</option>
+          <option value="jun">Jun</option>
+          <option value="jul">Jul</option>
+          <option value="aug">Aug</option>
+          <option value="sep">Sep</option>
+          <option value="oct">Oct</option>
+          <option value="nov">Nov</option>
+          <option value="dec">Dec</option>
+        </select>
+        <select name="year" id="year" class="ml-5">
+          <option selected disabled>Year:</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+        </select>
+      </div>
+      <br />
+      <div class="row">
+        <p for="email">Email ID </p>
+        <input type="email" id="email" />
+      </div>
+      <br />
+      <div class="row">
+        <p for="phone">Mobile Number </p>
+        <input type="number" id="phone" />
+        <span class="ml-5">(10 digit number)</span>
+      </div>
+      <br />
+      <div class="row">
+        <p for="gender">Gender </p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" class="ml-5" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" class="ml-5" />
+      </div>
+      <br />
+      <div class="row">
+        <p for="address">Address </p>
+        <textarea id="address"></textarea>
+      </div>
+      <br />
+      <div class="row">
+        <p for="city">City </p>
+        <input type="text" id="city" />
+        <span class="ml-5">(max 30 characters a-z and A-Z)</span>
+      </div>
+      <br />
+      <div class="row">
+        <p for="pincode">Pincode </p>
+        <input type="text" id="pincode" />
+        <span class="ml-5">(6 digit number)</span>
+      </div>
+      <br />
+      <div class="row">
+        <p for="state">State </p>
+        <input type="text" id="state" />
+        <span class="ml-5">(max 30 characters a-z and A-Z)</span>
+      </div>
+      <br />
+      <div class="row">
+        <p for="country">Country </p>
+        <input type="text" id="country" value="India" />
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
